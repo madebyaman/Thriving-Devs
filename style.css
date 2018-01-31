@@ -1,13 +1,13 @@
 @import url('reset.css');
-@import url('https://fonts.googleapis.com/css?family=Hind+Guntur:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,700');
 
 *, *::after, *::before {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Hind Guntur', Helvetica, sans-serif;
-  color: #333;
+  font-family: 'Rubik', Helvetica, sans-serif;
+  color: #545E65;
 }
 
 .container {
@@ -23,13 +23,13 @@ header {
 
 h1 {
   display: inline-block;
-  font-size: 30px;
+  font-size: 34px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 p.main {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
@@ -84,18 +84,27 @@ button[type='submit'] {
   background-color: #5F27CD;
   color: white;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   border: 0;
   border-radius: 5px;
   padding: 15px;
   text-transform: lowercase;
   cursor: pointer;
   text-decoration: none;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 button[type='submit']:hover {
-  opacity: 1;
+  opacity: 0.85;
+}
+
+.text {
+  display: inline-block;
+}
+
+.illustration {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 600px) {
@@ -105,18 +114,15 @@ button[type='submit']:hover {
     right: 5px;
     top: 5px;
     bottom: 5px;
-    font-size: 21px;
   }
 
   .text {
     width: 60%;
   }
 
-  h1 {
-    font-size: 36px;
-  }
-
-  p.main {
-    font-size: 22px;
+  .illustration {
+    width: 25%;
+    height: auto;
+    margin-left: 14%;
   }
 }
